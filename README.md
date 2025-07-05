@@ -1,6 +1,6 @@
 # 🧠 Grow My Therapy – Therapist Website (Next.js + Tailwind CSS)
 
-A beautifully responsive and modern therapist portfolio website built with **Next.js 15.2.4**, **Tailwind CSS**, and **TypeScript**. This project is designed to showcase therapy services in an elegant and user-friendly format, optimized for performance, accessibility, and SEO.
+A beautifully responsive and modern therapist portfolio website built with **Next.js**, **Tailwind CSS**, and **TypeScript**. This project is designed to showcase therapy services in an elegant and user-friendly format, optimized for performance, accessibility, and SEO.
 
 ---
 
