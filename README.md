@@ -40,12 +40,7 @@ This website is built for a fictional therapist **Dr. Serena Blake**, featuring:
 
 
 
-### 🔹 Responsive View (Mobile)
-![Mobile View]
-![WhatsApp Image 2025-07-05 at 18 44 26_e840a772](https://github.com/user-attachments/assets/1d1bf3fd-1cd8-4ae6-9598-64205950f60f)
-![WhatsApp Image 2025-07-05 at 18 44 26_07064fe6](https://github.com/user-attachments/assets/36c2d520-bbc5-4d4e-8cc5-687b571edaa4)
-![WhatsApp Image 2025-07-05 at 18 44 27_47da6581](https://github.com/user-attachments/assets/0e610b37-3e73-46b0-9b3c-239c9e0576bb)
-
+<p align="center"> <img src="https://github.com/user-attachments/assets/1d1bf3fd-1cd8-4ae6-9598-64205950f60f" alt="Mobile View 1" width="250" /> <img src="https://github.com/user-attachments/assets/36c2d520-bbc5-4d4e-8cc5-687b571edaa4" alt="Mobile View 2" width="250" /> <img src="https://github.com/user-attachments/assets/0e610b37-3e73-46b0-9b3c-239c9e0576bb" alt="Mobile View 3" width="250" /> </p>
 
 
 
