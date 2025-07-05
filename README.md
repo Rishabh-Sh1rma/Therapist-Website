@@ -7,7 +7,6 @@ A beautifully responsive and modern therapist portfolio website built with **Nex
 ## 🔗 Live Website
 
 > 🌍 [Visit Live Site](https://therapist-website-rosy.vercel.app/)  
-*(Replace with your actual live deployment link)*
 
 ---
 
