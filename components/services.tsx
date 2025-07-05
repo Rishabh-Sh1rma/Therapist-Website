@@ -4,13 +4,29 @@ import Image from "next/image"
 import { useEffect, useRef, useState } from "react"
 import { Heart, Users, Shield } from "lucide-react"
 
+// Color utility for icon backgrounds and hover text
+const colorMap = {
+  teal: {
+    iconBg: "bg-teal-600",
+    hoverText: "group-hover:text-teal-600",
+  },
+  rose: {
+    iconBg: "bg-rose-600",
+    hoverText: "group-hover:text-rose-600",
+  },
+  lime: {
+    iconBg: "bg-lime-600",
+    hoverText: "group-hover:text-lime-600",
+  },
+}
+
 const services = [
   {
     title: "Anxiety & Stress Management",
     description:
       "Find peace amidst life's storms. Together, we'll explore evidence-based techniques like CBT and mindfulness to help you manage anxiety, panic attacks, and chronic stress. You'll learn to identify triggers, develop healthy thought patterns, and build resilience that lasts.",
     icon: Heart,
-    image: "/stress.jpg", 
+    image: "/stress.jpg",
     color: "teal",
   },
   {
@@ -18,7 +34,7 @@ const services = [
     description:
       "Strengthen the connections that matter most. Whether you're navigating challenges with your partner, family, or friends, we'll work on improving communication, resolving conflicts, and deepening emotional intimacy. Healthy relationships are the foundation of a fulfilling life.",
     icon: Users,
-    image: "/couple.jpg", 
+    image: "/couple.jpg",
     color: "rose",
   },
   {
@@ -26,8 +42,8 @@ const services = [
     description:
       "Reclaim your sense of safety and self-worth. Using specialized approaches like EMDR and trauma-informed therapy, we'll work at your pace to process difficult memories and emotions. Healing is possible, and you don't have to face this journey alone.",
     icon: Shield,
-    image: "/trauma.jpg", 
-    color: "sage", 
+    image: "/trauma.jpg",
+    color: "lime", // ✅ Using lime instead of sage to match Tailwind color classes
   },
 ]
 
@@ -42,7 +58,7 @@ export default function Services() {
           setIsVisible(true)
         }
       },
-      { threshold: 0.1 },
+      { threshold: 0.1 }
     )
 
     if (sectionRef.current) {
@@ -55,6 +71,7 @@ export default function Services() {
   return (
     <section ref={sectionRef} id="services" className="py-24 bg-gradient-to-b from-slate-50 to-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
         {/* Section Header */}
         <div
           className={`text-center mb-20 transition-all duration-1000 ${
@@ -79,10 +96,12 @@ export default function Services() {
           </p>
         </div>
 
-        {/* Cards */}
+        {/* Service Cards */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
           {services.map((service, index) => {
             const Icon = service.icon
+            const styles = colorMap[service.color as keyof typeof colorMap]
+
             return (
               <div
                 key={index}
@@ -98,16 +117,15 @@ export default function Services() {
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-700"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
                   <div className="absolute bottom-4 left-4">
-                    <div className={`w-12 h-12 bg-${service.color}-600 rounded-full flex items-center justify-center`}>
+                    <div className={`w-12 h-12 ${styles.iconBg} rounded-full flex items-center justify-center`}>
                       <Icon className="w-6 h-6 text-white" />
                     </div>
                   </div>
                 </div>
 
                 <div className="p-8">
-                  <h3 className="text-2xl font-serif text-slate-800 mb-4 group-hover:text-teal-600 transition-colors duration-300">
+                  <h3 className={`text-2xl font-serif text-slate-800 mb-4 transition-colors duration-300 ${styles.hoverText}`}>
                     {service.title}
                   </h3>
                   <p className="text-slate-600 leading-relaxed">{service.description}</p>
