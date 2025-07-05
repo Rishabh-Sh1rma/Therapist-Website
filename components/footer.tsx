@@ -137,7 +137,7 @@ export default function Footer() {
         <div className="border-t border-slate-700 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-center md:text-left">
-              <p className="text-slate-400 text-sm">© 2024 Dr. Serena Blake, PsyD. All rights reserved.</p>
+              <p className="text-slate-400 text-sm">© 2025 Dr. Serena Blake, PsyD. All rights reserved.</p>
               <p className="text-slate-500 text-xs mt-1">
                 Licensed Clinical Psychologist • California License #PSY12345
               </p>
