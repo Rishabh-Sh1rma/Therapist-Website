@@ -78,7 +78,7 @@ export default function About() {
               <div className="absolute -inset-4 bg-gradient-to-r from-teal-200 to-rose-200 rounded-2xl blur-lg opacity-30"></div>
               <div className="relative bg-white p-2 rounded-2xl shadow-xl">
                 <Image
-                  src="/placeholder.svg?height=600&width=500"
+                  src="/doc.jpg"
                   alt="Dr. Serena Blake, Licensed Clinical Psychologist"
                   width={500}
                   height={600}

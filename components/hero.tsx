@@ -21,7 +21,7 @@ export default function Hero() {
       {/* Video Background */}
       <video autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover z-0">
         <source
-          src="https://player.cloudinary.com/embed/?cloud_name=dmxohihpi&public_id=qclw2u61rldddmz3a2cj&profile=cld-default"
+          src= "/video.mp4"
           type="video/mp4"
         />
       </video>

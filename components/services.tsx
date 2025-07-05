@@ -10,7 +10,7 @@ const services = [
     description:
       "Find peace amidst life's storms. Together, we'll explore evidence-based techniques like CBT and mindfulness to help you manage anxiety, panic attacks, and chronic stress. You'll learn to identify triggers, develop healthy thought patterns, and build resilience that lasts.",
     icon: Heart,
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/stress.jpg", // Place in /public/stress.jpg
     color: "teal",
   },
   {
@@ -18,7 +18,7 @@ const services = [
     description:
       "Strengthen the connections that matter most. Whether you're navigating challenges with your partner, family, or friends, we'll work on improving communication, resolving conflicts, and deepening emotional intimacy. Healthy relationships are the foundation of a fulfilling life.",
     icon: Users,
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/couple.jpg", // Place in /public/couple.jpg
     color: "rose",
   },
   {
@@ -26,8 +26,8 @@ const services = [
     description:
       "Reclaim your sense of safety and self-worth. Using specialized approaches like EMDR and trauma-informed therapy, we'll work at your pace to process difficult memories and emotions. Healing is possible, and you don't have to face this journey alone.",
     icon: Shield,
-    image: "/placeholder.svg?height=400&width=600",
-    color: "sage",
+    image: "/trauma.jpg", // Place in /public/trauma.jpg
+    color: "sage", // Use a Tailwind color that exists
   },
 ]
 
@@ -55,6 +55,7 @@ export default function Services() {
   return (
     <section ref={sectionRef} id="services" className="py-24 bg-gradient-to-b from-slate-50 to-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Section Header */}
         <div
           className={`text-center mb-20 transition-all duration-1000 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
@@ -78,6 +79,7 @@ export default function Services() {
           </p>
         </div>
 
+        {/* Cards */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
           {services.map((service, index) => {
             const Icon = service.icon
@@ -89,16 +91,14 @@ export default function Services() {
                 }`}
                 style={{ transitionDelay: `${index * 200}ms` }}
               >
-                <div className="relative h-64 overflow-hidden">
+                <div className="relative aspect-[3/2] w-full overflow-hidden">
                   <Image
-                    src={service.image || "/placeholder.svg"}
+                    src={service.image}
                     alt={service.title}
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-700"
                   />
-                  <div
-                    className={`absolute inset-0 bg-gradient-to-t from-${service.color}-900/60 to-transparent`}
-                  ></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
                   <div className="absolute bottom-4 left-4">
                     <div className={`w-12 h-12 bg-${service.color}-600 rounded-full flex items-center justify-center`}>
                       <Icon className="w-6 h-6 text-white" />
@@ -117,6 +117,7 @@ export default function Services() {
           })}
         </div>
 
+        {/* Pricing Section */}
         <div
           className={`bg-white rounded-2xl shadow-xl p-8 lg:p-12 transition-all duration-1000 delay-600 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
