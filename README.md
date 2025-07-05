@@ -27,7 +27,7 @@ This website is built for a fictional therapist **Dr. Serena Blake**, featuring:
 
 | Frontend        | Framework       | Styling         | Icons           | Optimization     |
 |----------------|------------------|------------------|------------------|-------------------|
-| React 18        | Next.js 15.2.4   | Tailwind CSS     | Lucide Icons     | Next/Image & SSR  |
+| React 18        | Next.js (App Router)  | Tailwind CSS     | Lucide Icons     | Next/Image & SSR  |
 
 ---
 
