@@ -10,7 +10,7 @@ const services = [
     description:
       "Find peace amidst life's storms. Together, we'll explore evidence-based techniques like CBT and mindfulness to help you manage anxiety, panic attacks, and chronic stress. You'll learn to identify triggers, develop healthy thought patterns, and build resilience that lasts.",
     icon: Heart,
-    image: "/stress.jpg", // Place in /public/stress.jpg
+    image: "/stress.jpg", 
     color: "teal",
   },
   {
@@ -18,7 +18,7 @@ const services = [
     description:
       "Strengthen the connections that matter most. Whether you're navigating challenges with your partner, family, or friends, we'll work on improving communication, resolving conflicts, and deepening emotional intimacy. Healthy relationships are the foundation of a fulfilling life.",
     icon: Users,
-    image: "/couple.jpg", // Place in /public/couple.jpg
+    image: "/couple.jpg", 
     color: "rose",
   },
   {
@@ -26,8 +26,8 @@ const services = [
     description:
       "Reclaim your sense of safety and self-worth. Using specialized approaches like EMDR and trauma-informed therapy, we'll work at your pace to process difficult memories and emotions. Healing is possible, and you don't have to face this journey alone.",
     icon: Shield,
-    image: "/trauma.jpg", // Place in /public/trauma.jpg
-    color: "sage", // Use a Tailwind color that exists
+    image: "/trauma.jpg", 
+    color: "sage", 
   },
 ]
 

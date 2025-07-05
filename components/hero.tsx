@@ -38,7 +38,7 @@ export default function Hero() {
           isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
         }`}
       >
-        <h1 className="text-5xl sm:text-6xl lg:text-7xl font-serif text-white mb-6 leading-tight drop-shadow-lg">
+        <h1 className="text-6xl sm:text-6xl lg:text-7xl font-serif text-white mb-6 leading-tight drop-shadow-lg">
           Compassionate Therapy to{" "}
           <span className="text-teal-300 relative">
             Help You Thrive
